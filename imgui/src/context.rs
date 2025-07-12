@@ -48,7 +48,7 @@ use crate::{MouseCursor, Ui};
 
 #[derive(Debug)]
 pub struct Context {
-    raw: *mut sys::ImGuiContext,
+    pub raw: *mut sys::ImGuiContext,
     shared_font_atlas: Option<SharedFontAtlas>,
     ini_filename: Option<CString>,
     log_filename: Option<CString>,
